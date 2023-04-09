@@ -1,0 +1,53 @@
+<meta charset="UTF-8"> 
+ 
+ <h1>PROGRAMA</h1>
+
+<script>
+
+    //Años de nacimiento
+
+    function saltarLinea() {   // ESTA FUNCION TIENE PARÁMETRO DE ENTRADA
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>"); // Esta etiqueta hace una línea de separación
+        document.write("<br>");
+        document.write("<br>");        
+ 
+    };
+
+    function imprimir(frase) {  
+
+        document.write("<big>"+ frase + "</big>"); // Acá es dónde se hacen las modificaciones con las etiquetas HTML
+        saltarLinea();
+
+    };
+
+    var anho = 2025;  
+
+     imprimir("Hola amigos"); 
+
+     // Este código calcula las edades de Juan, Pedro y Carlos  
+
+     imprimir("Juan tiene: " + (anho-2003) + " años");
+
+     imprimir("Pedro tiene: " + (anho-1998) + " años");
+
+
+    anho = 2030; 
+
+     imprimir("Carlos tiene: " + (anho-2008) + " años");
+   
+
+</script>
+
+<!-- ¿Qué pasa si te olvidas la palabra function a la hora de declarar una de las funciones? ¿Y los paréntesis en la declaración de la función saltarLinea? -->
+
+<!--
+ Si te olvidas de la palabra function entonces el programa simplemente no funciona, la función estaría mal declarada y afectaría todo lo programado y concatenado en JavaScript, no habría caso seguir.
+
+Si te olvidas de los paréntesis tampoco funciona el programa, no sabría explicarlo, es que esos paréntesis sirven para integrar una variable en caso así se necesite en la función, siempre es necesario tenerlas ahí. A esos elementos, frases o números que van dentro de esas funciones se les llama "Expresiones de Función Inmediatamente Invocables" (Immediatly Invoked Function Expressions), el propósito de este "wrapping" (envase, encapsulamiento) es darle espacio a los namespaces, que son como nombres específicos por algunas variables, y controlar la visibilidad a las funciones de miembro, que son las instrucciones dentro de los paréntesis.
+
+ -->
+
